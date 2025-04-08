@@ -10,9 +10,7 @@ def add_todo():
     functions.write_todos(todos)
 
 
-st.title("My To-Do App")
-st.subheader("This is my todo app")
-st.write("This app to increase your productivity")
+st.title("WakeeHUN To-Do App")
 
 todos = functions.get_todos()
 for index, todo in enumerate(todos):
@@ -24,5 +22,3 @@ for index, todo in enumerate(todos):
         st.rerun()
 
 st.text_input(label="", placeholder="Add new todo...", on_change=add_todo, key="new_todo")
-
-st.session_state
