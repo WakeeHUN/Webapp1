@@ -10,7 +10,8 @@ def add_todo():
     functions.write_todos(todos)
 
 
-st.title("WakeeHUN To-Do App")
+st.title("To-Do App")
+st.write("Created by WakeeHUN")
 
 todos = functions.get_todos()
 for index, todo in enumerate(todos):
